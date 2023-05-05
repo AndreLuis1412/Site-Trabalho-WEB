@@ -1,0 +1,402 @@
+/* Configuracoes universais */
+html {
+  height: 100%;
+  width: 100%;
+} 
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: orange;
+  font-family: Candara, Helvetica, sans-serif;
+  margin: 0 30px 0 30px;
+  padding: 20px 0px 20px 0px;
+}
+
+/* Cabecalho */
+.head h1{
+  user-select: none;
+  font-size: 3rem;
+ color: rgb(20,20,20);
+}
+
+.nav{
+  margin: 0 600px 0 600px;
+  display: flex;
+  background-color: rgb(20,20,20);
+  justify-content: center;
+  padding: 10px 5px 10px 5px;
+  border-radius: 20px;
+}
+
+nav a{
+  padding: 0 10px 0 10px;
+  text-decoration: none;
+  color: white;
+  transition: .5s;
+}
+nav a:hover{
+  color: black;
+  background: orange;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 3px rgb(255, 255, 255); /* deslocamento-x | deslocamento-y | desfoque | espalhamento | cor */
+}
+
+.head{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 0 0;
+}
+
+.imgLog{
+  margin-right: 10px;
+  pointer-events: none;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+/* Fim cabecalho */
+
+
+/* Rodape */
+.pe{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.contlPe{
+  background-color: rgb(20,20,20);
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  border-radius: 30px;
+}
+
+.pe h1{
+  color: white;
+  font-size: 20px;
+}
+
+.pe img{
+  height: 45px;
+  width: 45px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 50%;
+  transition: .5s;
+  opacity: .3;
+}
+
+.pe img:hover{
+opacity: 1;
+}
+
+/* Rodape cardapio */
+
+.pe2{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10;
+  left: 0;
+  width: 100%;
+}
+
+.contlPe2{
+  background-color: rgb(20,20,20);
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  border-radius: 30px;
+}
+
+.pe2 h1{
+  color: white;
+  font-size: 20px;
+}
+
+.pe2 img{
+  height: 45px;
+  width: 45px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 50%;
+  transition: .5s;
+  opacity: .3;
+}
+
+.pe2 img:hover{
+opacity: 1;
+}
+
+/* Fim Rodape cardapio */
+/* Fim rodape */
+
+/* Telefone */
+.entrega{
+  position: fixed;
+  right: 25px;
+  bottom: 1px;
+  height: 100px;
+  width: 300px;
+  float: right;
+}
+
+.entrega img{
+  position: absolute;
+  right: 10px;
+  width: 75px;
+  border-radius: 50%; 
+
+}
+
+.entrega img:hover + .tel{
+  opacity: 1;
+}
+
+.tel{
+  background-color: rgb(20,20,20);
+  height: 60px;
+  color: white;
+  border-radius: 12px;
+  left: -40px;
+  margin-top: 10px;
+  padding: 10px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity .5s;
+  pointer-events: none;
+}
+
+.tel p{
+  margin: 0;
+  
+}
+
+.entrega a{
+  text-decoration: none;
+}
+/* Fim telefone */
+/* Fim das configuracoes universais */
+
+
+/* Configuracoes pagina principal */ 
+.loc1{
+  box-shadow: 0px 5px 5px rgb(20,20,20);
+  display: flex;
+  justify-content: center;
+  margin: 20px 780px 20px 780px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.loc2{
+  box-shadow: 0px 5px 5px rgb(20,20,20);
+  display: flex;
+  justify-content: center;
+  margin: 20px 500px 20px 500px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.ftGale{
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  width: 800px; /* mudar depois */
+  box-shadow: 0px 3px 5px rgb(20,20,20);
+  padding: 30px 0 30px 0;
+  /*margin-left: 535px;*/
+  margin: 0 535px 0 535px ;
+}
+.ftGale img{
+  border-radius: 20px;
+}
+/* Fim das configuracoes pagina principal */ 
+
+/* Configuracoes pagina cardapio */
+.produto{
+  text-align: center;
+  margin-top: 20px;
+  height: 390px;
+  width: 300px;
+  transition: box-shadow .5s;
+  border-radius: 10px;
+  padding: 20px 0 20px 0;
+}
+
+.produto img{
+  border-radius: 50%;
+  
+  box-shadow: 5px 5px 10px rgb(20,20,20);
+}
+
+.produto:hover{
+  box-shadow: 5px 10px 15px rgb(20,20,20);
+}
+
+.marmita{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 10px 50px 10px 50px;
+}
+
+.nome{
+  font-weight: bold;
+}
+
+.preco{
+  background-color: rgb(20,20,20);
+  color: white;
+  border-radius: 10px;
+  margin: 0 65px 0 65px;
+  justify-content: center;
+}
+
+.acompanha{
+  width: 200px;
+  margin-left: 45px;
+}
+
+.cardapio{
+  background-color: orange;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgb(20,20,20);
+  height: 1700px;
+  width: 80%;
+  margin-left: 185px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.cardaPor{
+  background-color: orange;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgb(20,20,20);
+  height: 865px;
+  width: 80%;
+  margin-left: 185px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.ilus{
+  position: relative;
+  left: 185px;
+  top: 40px;
+  font-size: 4rem;
+}
+
+.tituloMar{
+  background-color: rgb(20,20,20);
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  margin-top: 15px;
+  margin-left: 740px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px rgb(20,20,20);
+  padding: 10px 10px 10px 10px;
+}
+
+.tituloMar a{
+  text-decoration: none;
+  color: white;
+  padding: 0 7px 0 7px;
+  border-radius: 20px;
+  transition: box-shadow .5s;
+}
+
+.tituloMar a:hover{
+  color: black;
+  background: orange;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 3px rgb(255,255,255);
+}
+
+/* Fim Configuracoes pagina cardapio */
+
+/* Configurações Opc de pagamento */
+.pagamento{
+  border-radius: 20px;
+  width: 340px;
+  height: 200px;
+  box-shadow: 0px 5px 5px rgb(20,20,20);
+}
+
+.pagamento  h1{
+  margin: 10px 20px 10px 20px;
+}
+
+.pagamento li{
+  list-style: circle;
+  /* list-style-image: ; (esse serve para colocar img na bolinha do li não ordenado) ❌✔ ✅ */
+}
+
+.orgPag{
+  margin-left: 770px;
+}
+
+.mainPag img{
+  width: 200px;
+  height: 100px; 
+  margin: 20px 10px 20px 10px;
+}
+
+.mainPag img:nth-of-type(5){
+  width: 280px;
+  height: 100px;
+}
+
+.mainPag img:nth-of-type(1){
+  margin-left: 380px;
+}
+
+#peOpc{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#contlPeOpc{
+  background-color: rgb(20,20,20);
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  border-radius: 30px;
+}
+
+#peOpc h1{
+  color: white;
+  font-size: 20px;
+}
+
+#peOpc img{
+  height: 45px;
+  width: 45px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 50%;
+  transition: .5s;
+  opacity: .3;
+}
+
+#peOpc img:hover{
+opacity: 1;
+}
+/* Fim Configurações Opc de pagamento */
+
+/* Parte do site responsivo 
+@media screen and (max-width : 1600px){
+  
+}
+/* Fim Parte do site responsivo */
